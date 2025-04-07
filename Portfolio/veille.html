@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Safa C.</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>Accueil</span></a>
+
+        <ul class="nav-links">
+            
+            <li>
+                <a href="bts.html">BTS SIO</a>
+            </li>
+            <li>
+                <a href="projects.html">Projets</a>
+            </li>
+            <li>
+                <a href="veille.html">Veille</a>
+            </li>
+            <li>
+                <a href="certifications.html">Certification</a>
+            </li>
+        </ul>
+        <div class="visit-btn" onclick="window.open('doc/PDF projets/tableau synthese v2.pdf', '_blank');" style="cursor:pointer">Synthèse </div>
+
+    </header>
+
+    
+    <section class="veille-technologique">
+        <div class="faq">
+    
+                <h4 class="section-title">Qu'est-ce qu'une veille technologique ?</h4>
+                <p >
+                    Une veille technologique consiste à surveiller en continu l'évolution des technologies, des outils et des innovations dans un domaine spécifique. Elle permet de rester informé des dernières tendances, de comprendre les changements dans les pratiques, et d'anticiper les impacts de ces évolutions sur les métiers et les projets.
+                </p>
+            </div>
+    
+            <div class="faq">
+                <h4 class="section-title">Les outils utilisés</h4>
+                <p>
+                    La veille technologique peut être réalisée à travers diverses sources, comme des blogs spécialisés, des forums, des conférences, des études de marché, des alertes sur des plateformes de gestion d'informations (ex. : Feedly), et en s'appuyant sur des outils comme ChatGPT pour analyser et synthétiser les informations.
+                </p>
+            </div>
+
+            <div class="faq">
+                <h4 class="section-title">Mon thème</h4>
+                <p>
+                    L'impact croissant de l'IA sur la cybersécurité : des menaces liées à l'usurpation d'identité, au vol de données et à l'utilisation des deepfakes
+                </p>
+            </div>
+        </div>
+    </section>
+    
+            
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.querySelector('.answer');
+            const toggle = questionElement.querySelector('.toggle');
+    
+            // Si la question est fermée, on l'ouvre, sinon on la ferme
+            if (questionElement.classList.contains('closed')) {
+                questionElement.classList.remove('closed');
+                questionElement.classList.add('open');
+                toggle.textContent = '-';  // Change le signe en '-'
+                answer.style.display = 'block';  // Affiche la réponse
+            } else {
+                questionElement.classList.remove('open');
+                questionElement.classList.add('closed');
+                toggle.textContent = '+';  // Change le signe en '+'
+                answer.style.display = 'none';  // Masque la réponse
+            }
+        }
+    </script>
+    
+            
+            
+            
+    <section id="articles-section">
+        <h2 class="title-section">Articles</h2>
+        <div class="grid-articles">
+            <div class="article-card">
+                <h3>Is your coworker a North Korean hacker? How AI impersonation is compromising the workforce</h3>
+                <p>  </p>
+                <div class="button" onclick="window.open('https://www.cio.com/article/3542825/is-your-coworker-a-north-korean-hacker-how-ai-impersonation-is-compromising-the-workforce.html', '_blank');" style="cursor:pointer">En savoir +</div>
+            </div>
+            <div class="article-card">
+                <h3>Deepfakes audio de Joe Biden : leur créateur condamné à 6 millions de dollars d’amende</h3>
+                <p>_</p>
+                <div class="button" onclick="window.open('https://www.lemonde.fr/pixels/article/2024/09/27/deepfakes-audio-de-joe-biden-leur-createur-condamne-a-6-millions-de-dollars-d-amende_6336358_4408996.html');" style="cursor:pointer">En savoir +</div>
+            </div>
+            <div class="article-card">
+                <h3>Corée du Sud : l'ampleur des "deepfake" à caractère (pegi-18) sur des élèves fait réagir le gouvernement et Telegram</h3>
+                <p>   
+                </p>
+                <div class="button" onclick="window.open('https://wwwcoworker-a-north-korean-hacker-how-ai-impersonation-is-compromising-the-workforce.html', '_blank');" style="cursor:pointer">En savoir +</div>
+            </div>
+            <div class="article-card">
+                <h3>Une solution française permet d’identifier la majorité des deepfakes musicaux et vocaux</h3>
+                <p>  </p>
+                <div class="button" onclick="window.open('https://www.techniques-ingenieur.fr/actualite/articles/une-solution-francaise-permet-d-identifier-la-majorite-des-deepfakes-musicaux-et-vocaux-140468/', '_blank');" style="cursor:pointer">En savoir +</div>
+            </div>
+            <!-- Ajoutez ici d'autres articles -->
+        </div>
+    </section>
+
+
+    <footer>
+
+        <p class="copyright">© All Rights Reserved | Safa Chaaben</p>
+    </footer>
